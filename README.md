@@ -38,5 +38,5 @@ Notepad++ é um **editor de texto** de software livre cujo código fonte é aber
 *Nota: No site principal do Notepad++ temos uma lista de desenvolvedores dentre os quais podemos citar Don Ho como autor e
 É possível também verificar em https://github.com/notepad-plus-plus/notepad-plus-plus/graphs/contributors uma lista de 91 contribuidores para o funcionamento do software.*
 
-Evolução do sistema 
+##Evolução do sistema 
 Foram registrados um total de **137 releases** até o momento, porém não é muito claro a partir de qual versão a equipe de desenvolvimento migrou o sistema para o repositório do github. O tempo de liberação de um novo release é de cerca de um mês, mas não há um dia fixo para isto. O principal responsável pela liberação do release é o usuário Don HO.
