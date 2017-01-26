@@ -147,12 +147,14 @@ No Notepad++ mostramos isso a seguir:
 
 ==================================
 **Interface minimalista**
+
 *O usuário pode personalizar a interface da forma como desejar, abaixo temos a lista de exemplos de como a interface pode ficar*
 
 ![enter image description here](https://lh3.googleusercontent.com/-k54ajMNO3SE/WABCGnM8RPI/AAAAAAAADXo/IdsdgjZVpAUdRGFnCivUHdBfxFTt2XjogCLcB/s0/Screenshot_8.png "Screenshot_8.png")
 
 ==========
 **Guia com botão fechar**
+
 *É possível fechar as abas abertas clicando no* ![enter image description here](http://www.centralliguesite.com.br/application/third_party/xsystem/images/fugue/icons/x.png) 
 
 ![enter image description here](https://lh3.googleusercontent.com/-k5H29IIE2DA/WABCPk9q-4I/AAAAAAAADXw/ovBo8zaJKs4tcIJXoyvhmStTN3Av0govwCLcB/s0/Screenshot_9.png "Screenshot_9.png")
@@ -174,19 +176,23 @@ No Notepad++ mostramos isso a seguir:
 
 ==========
 **Mapa do documento**
-Informa para o usuário onde está no código, a imagem pode ser visualizada abaixo
+
+*Informa para o usuário onde está no código, a imagem pode ser visualizada abaixo*
 
 ![enter image description here](https://lh3.googleusercontent.com/-HZDa_9AhNYs/WABCzfsPvoI/AAAAAAAADYc/1LrjqaPJNeEi4HC9u8yOnHN7eIkPqdRiACLcB/s0/Screenshot_12.png "Screenshot_12.png")
 
 ==========
 **AutoComplete**
-Provê sugestões enquanto o usuário está digitando, auxiliando e provendo agilidade ao desenvolvimento.
+
+*Provê sugestões enquanto o usuário está digitando, auxiliando e provendo agilidade ao desenvolvimento.*
 
 ==========
 **Interface de documentos múltiplos e Multi-View**
-Permite que o usuário exiba vários documentos ao mesmo tempo, porém com cada documento sendo exibido em sua própria janela. Notepad++  pode indicar dois arquivos um do lado do outro ou acima ou até mesmo mostrar duas partes do mesmo arquivo.
+
+*Permite que o usuário exiba vários documentos ao mesmo tempo, porém com cada documento sendo exibido em sua própria janela. Notepad++  pode indicar dois arquivos um do lado do outro ou acima ou até mesmo mostrar duas partes do mesmo arquivo.*
 
 ==========
 **WYSIWYG**
-WYSIWYG é uma sigla em inglês formada pelas iniciais da expressão *“What You See Is What You Get”* e quer dizer “O que você vê é o que você obtém”. O termo é usado para classificar ferramentas de edição e desenvolvimento que permitem visualizar, em tempo real, exatamente aquilo que será publicado ou impresso.
+
+*WYSIWYG é uma sigla em inglês formada pelas iniciais da expressão *“What You See Is What You Get”* e quer dizer “O que você vê é o que você obtém”. O termo é usado para classificar ferramentas de edição e desenvolvimento que permitem visualizar, em tempo real, exatamente aquilo que será publicado ou impresso.*
 
