@@ -140,6 +140,20 @@ No Notepad++ mostramos isso a seguir:
 
 ![enter image description here](https://lh3.googleusercontent.com/-68DMn3DMWzg/WABBBTCsY4I/AAAAAAAADXM/6wNmQ_1IMGgWtx7R3M2d2IJ1QPzIwb9KgCLcB/s0/Screenshot_7.png "Screenshot_7.png")
 
+==================================
+
 **PCRE (Perl Compatible Regular Expression) Search/Replace**
 
 *Biblioteca contendo um conjunto de funções que implementam padrão de correspondência de expressão regular inspirada na interface externa *Perl*. É um destaque de sintaxe poderosa e flexível pois possui sua própria API nativa, bem como um conjunto de funções de mensagens publicitárias que correspondem à expressão regular POSIX API. É uma biblioteca gratuita mesmo que o desenvolvedor a use para a construção de um software pago. Foi inicialmente descrita para o Emim MTA (sistema de transferência de mensagem para uso em sistemas Unix conectados a internet); sendo agora usado agora por diversos códigos de código aberto além do Notepad++ como *Apache , PHP , KDE , Postfix , Analog , e Nmap*. Existem duas versões principais da biblioteca PCRE. A versão mais recente foi lançada em 2015 e está na versão 10.22. A biblioteca PCRE original, lançado originalmente em 1997, está na versão 8.39, e o conjunto de API e funcionalidade são estáveis e futuros lançamentos serão apenas para correções de bugs.*
+
+==================================
+
+**Interface minimalista**
+*O usuário pode personalizar a interface da forma como desejar, abaixo temos a lista de exemplos de como a interface pode ficar*
+![enter image description here](https://lh3.googleusercontent.com/-k54ajMNO3SE/WABCGnM8RPI/AAAAAAAADXo/IdsdgjZVpAUdRGFnCivUHdBfxFTt2XjogCLcB/s0/Screenshot_8.png "Screenshot_8.png")
+
+**Guia com botão fechar**
+*É possível fechar as abas abertas clicando no ![enter image description here](http://www.centralliguesite.com.br/application/third_party/xsystem/images/fugue/icons/x.png) 
+
+![enter image description here](https://lh3.googleusercontent.com/-k5H29IIE2DA/WABCPk9q-4I/AAAAAAAADXw/ovBo8zaJKs4tcIJXoyvhmStTN3Av0govwCLcB/s0/Screenshot_9.png "Screenshot_9.png")
+
