@@ -45,12 +45,10 @@ Foram registrados um total de **137 releases** até o momento, porém não é mu
 ![enter image description here](https://lh3.googleusercontent.com/-PxYFiXTf9ew/WAA92WBXC9I/AAAAAAAADV8/CvS15dYEVeQ2kRtoi-Ntqgp4VAW-tGMxgCLcB/s0/Screenshot_1.png "Screenshot_1.png")
 > O gráfico acima mostra a quantidade de contribuidores, desde agosto de 2007 até os dias de hoje, e percebe-se que o sistema obteve um >aumento muito grande de contribuição nos últimos anos.
 
-**==========**
 
  ![enter image description here](https://lh3.googleusercontent.com/-7_YeV0YPENk/WAA-L6CIuzI/AAAAAAAADWE/zS4Y7LPrbFkKLM8mZI82NdIpYGct7_2cwCLcB/s0/Screenshot_2.png "Screenshot_2.png")
  > O gráfico acima mostra a quantidade de commits feitos durante o último ano. Nota-se que o volume de commits se mantém constante o que >é bom para manter a software em pleno aprimoramento.
  
- **==========**
  
  ![enter image description here](https://lh3.googleusercontent.com/-5s84BM0lNRA/WAA-bhjgr7I/AAAAAAAADWM/DamV9Uhhy_4-GL8BtWMXBdbhGJzcn82dwCLcB/s0/Screenshot_3.png "Screenshot_3.png")
 > O gráfico acima mostra a quantidade de código que foi incluída ou excluída no projeto. É possível verificar que existem períodos que >incluem muitas linhas e que logo após vêm períodos que removem muitas linhas.
