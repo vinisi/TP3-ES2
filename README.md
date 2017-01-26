@@ -76,7 +76,7 @@ Foram registrados um total de **137 releases** até o momento, porém não é mu
        bem como a ajuda que o github proporcionou ao projeto, agora este pode ser mantido e evoluído por 
        pessoas de todo o mundo.
 
-==========
+
 Versão 7
 --------
     Foi lançada no dia 22/09/2016 e trouxe suporte a plataforma 64 bits, uma grande melhoria que certamente irá 
