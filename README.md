@@ -40,3 +40,6 @@ Notepad++ é um **editor de texto** de software livre cujo código fonte é aber
 
 ##Evolução do sistema 
 Foram registrados um total de **137 releases** até o momento, porém não é muito claro a partir de qual versão a equipe de desenvolvimento migrou o sistema para o repositório do github. O tempo de liberação de um novo release é de cerca de um mês, mas não há um dia fixo para isto. O principal responsável pela liberação do release é o usuário Don HO.
+
+![enter image description here](https://lh3.googleusercontent.com/-PxYFiXTf9ew/WAA92WBXC9I/AAAAAAAADV8/CvS15dYEVeQ2kRtoi-Ntqgp4VAW-tGMxgCLcB/s0/Screenshot_1.png "Screenshot_1.png")
+*Nota: O gráfico acima mostra a quantidade de contribuidores, desde agosto de 2007 até os dias de hoje, e percebe-se que o sistema obteve um aumento muito grande de contribuição nos últimos anos:*
