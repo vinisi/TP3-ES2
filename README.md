@@ -72,10 +72,10 @@ Foram registrados um total de **137 releases** até o momento, porém não é mu
    > *Quanto maior a bola, maior a quantidade de commits. A quantidade de commits está* 
    > *expressa em relação ao horário em que é feito o commit relacionado com o dia da semana.*
 
- 
-       Nota: Muito do sucesso do notepad++ se dá pela fácil utilização e ampla aceitação de vários usuários, 
+--------
+       ***Nota: Muito do sucesso do notepad++ se dá pela fácil utilização e ampla aceitação de vários usuários, 
        bem como a ajuda que o github proporcionou ao projeto, agora este pode ser mantido e evoluído por 
-       pessoas de todo o mundo.
+       pessoas de todo o mundo.***
 
 ==========
 Versão 7
