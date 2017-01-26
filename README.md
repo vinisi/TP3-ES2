@@ -126,7 +126,6 @@ Versão 4, Versão 3, Versão 2, Versão 1
  [http://docs.notepad-plus-plus.org/index.php/Releases](http://docs.notepad-plus-plus.org/index.php/Releases) 
  
 ## 5. Características de desenvolvimento
-==================================
 
 **Syntax Highlighting e Syntax Folding**
 
@@ -202,3 +201,63 @@ No Notepad++ mostramos isso a seguir:
  - Lançamento com diferentes argumentos, vide imagem abaixo:
  
  ![enter image description here](https://lh3.googleusercontent.com/-WioIPKNTRPo/WABDJWdgYrI/AAAAAAAADY0/2tBkUn4Lb7ILNVwwk1PKrM7SZqoBeTlIwCLcB/s0/Screenshot_13.png "Screenshot_13.png")
+
+## 6. Arquitetura
+
+**Scintilla**
+*Scintilla é um componente de edição de texto que consiste em uma biblioteca de código aberto. Ele vem com uma licença que permite seu uso em qualquer projeto livre ou produto comercial, ou seja, é um software livre. Trata-se do controle de edição do Notepad++ e tem importância crucial para o mesmo.
+Ele é como o controle RichText padrão que existe no Notepad básico, porém com a adição de funcionalidades relativas a edição de código, como destaque de sintaxe e code folding. As áreas onde escreve e pesquisa texto são exibidas pelo controle Scintilla.
+A adoção do Scintilla trata-se de uma decisão de projeto central, com vantagens e desvantagens, partindo-se do pressuposto que as vantagens prevalecem sobre as desvantagens:*
+
+- Vantagens: Quando o componente Scintilla corrige bugs ou adiciona alguma funcionalidade, é o bastante para Notepad++ adicioná-lo numa versão futura, sem necessidade de trabalho de desenvolvimento por parte da equipe do Notepad++, com o benefício extra do conjunto de testes que o projeto Scintilla possui.
+- Desvantagens: Se Scintilla possui limitações as quais seus desenvolvedores atribuem baixa prioridade, Notepad++ também fica com tais limitações. Soluções alternativas, quando existem, geralmente não são triviais.
+
+*Scintilla é estruturado em 3 camadas de código C++, cada uma com seu conjunto de classes e subclasses. O propósito principal desta estrutura é separar o código entre as partes dependentes da plataforma e as partes do código central, que independe de plataforma. Isso facilita a portabilidade do Scintilla para uma nova plataforma e garante que leitores do código não tenham que lidar com detalhes relacionados a plataformas.*
+
+> Segue abaixo as 3 camadas de código do Scintilla e uma breve visão de suas respectivas classes:
+
+### 1. Biblioteca de portabilidade
+
+*Pequena camada de código sobre as capacidades nativas a uma plataforma, definida em Platform.h e implementada uma vez por plataforma, seja ela Windows ou GTK+/Linux. PlatWin.cxx define as variantes Windows dos métodos e PlatGTK.cxx as variantes GTK+.*
+
+**Point, PRectangle**
+*Classes simples que contem as primitivas geométricas comumente usadas.*
+==========
+**ColourDesired**
+*Classe simples que contem uma cor esperada. Representada internamente como um único inteiro de 32 bits no formato BGR com 8 bits por cor. Provê também uma API conveniente para buscar cada componente separadamente.*
+==========
+**Font**
+*Possui um identificador de fonte específico de cada plataforma - HFONT para Windows, PangoFontDescription* para GTK+.*
+==========
+**Surface**
+*Surface é uma abstração sobre o conceito de cada plataforma de um lugar onde operações de desenhos gráficos podem ser feitos. Dentre as operações de desenhos fornecidas estão incluídas polígonos preenchidos e não-preenchidos, linhas, retângulos, elipses e texto. Altura e largura de texto e outros detalhes podem ser medidos.*
+==========
+**Window**
+*Window permite a execução de operações como exibir, mover, redesenhar e eliminar. Contém um identificador de janela específico para cada plataforma - HWND para Windows, GtkWidget* para GTK+.*
+==========
+**ListBox**
+*ListBox é uma subclasse de Window e oferece métodos para operações tais como adição, recuperação e seleção de itens.*
+==========
+**Menu**
+*Menu é uma pequena classe para construir menus de popup. Contém o identificador de menu específico de cada plataforma - HMENU para Windows, GtkMenu* para GTK+.*
+==========
+**Platform**
+*A classe Platform é usada para acessar as funcionalidades da plataforma.*
+
+
+### 2. Código central 
+A porção do código independente de plataforma. É composta pelasclasses pimárias CellBuffer, ContractionState, Document, Editor, Indicator, LineMarker, Style, ViewStyle, KeyMap, ScintillaBase, CallTip e AutoComplete.
+CellBuffer
+Um CellBuffer possui informação de texto e estilo, a pilha do “Desfazer”, a atribuição de marcadores de linhas para linhas e a estrutura do fold.
+Document
+Um documento contem um CellBuffer e lida com algumas abstrações de nível mais alto como palavras, sequências de caracteres DBCS e de final de linha. É responsável por gerenciar o processo de estilização e notificar outros objetos quando ocorrem alterações no documento.
+Editor
+O objeto Editor é central para o Scintilla. É responsável por exibir um documento e responder a ações do usuário. Podem existir múltiplos objetos Editor anexados a um objeto Document. Mudanças em um documento são transmitidas para os editores através do mecanismo DocWatcher.
+ScintillaBase
+ScintillaBase é uma subclasse de Editor e adiciona funções como listas de autocompletar e menus de contexto. Essas funções usam os objetos CallTip e AutoComplete. Esta classe é opcional, então uma implementação mais leve do Scintilla pode ignorar esta funcionalidade extra se ela não for necessária.
+
+
+Eventos e APIs de plataforma
+
+Camada responsável por implementar alguns métodos virtuais e conectar-se ao mecanismo de eventos, diferentes para cada plataforma. No Windows, eventos são recebidos através de mensagens e COM. No GTK+, usa-se funções de callback.
+Para cada plataforma, uma classe é derivada de ScintillaBase e, portanto, de Editor, gerando ScintillaWin no Windows e ScintillaGTK no GTK+.
