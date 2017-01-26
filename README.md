@@ -66,3 +66,13 @@ Foram registrados um total de **137 releases** até o momento, porém não é mu
 
  
 **Nota: Muito do sucesso do notepad++ se dá pela fácil utilização e ampla aceitação de vários usuários, bem como a ajuda que o github proporcionou ao projeto, agora este pode ser mantido e evoluído por pessoas de todo o mundo.**
+
+
+Versão 7
+--------
+
+    Foi lançada no dia 22/09/2016 e trouxe suporte a plataforma 64 bits, uma grande melhoria que certamente irá beneficiar muito a robustez do software. Além disto foram ajustadas vulnerabilidades encontradas no instalador do programa, foram feitas melhorias no sistema de auto atualização do sistema, correção de bugs e muitas outras coisas somando um total de 19 features e correção de bugs. 
+    
+    Mais informações podem ser encontradas no link
+
+[https://notepad-plus-plus.org/download/v7.html](https://notepad-plus-plus.org/download/v7.html)
