@@ -216,6 +216,7 @@ A adoção do Scintilla trata-se de uma decisão de projeto central, com vantage
 
 > Segue abaixo as 3 camadas de código do Scintilla e uma breve visão de suas respectivas classes:
 
+--------
 ### 6.1. Biblioteca de portabilidade
 
 *Pequena camada de código sobre as capacidades nativas a uma plataforma, definida em Platform.h e implementada uma vez por plataforma, seja ela Windows ou GTK+/Linux. PlatWin.cxx define as variantes Windows dos métodos e PlatGTK.cxx as variantes GTK+.*
@@ -259,7 +260,7 @@ A adoção do Scintilla trata-se de uma decisão de projeto central, com vantage
 
 *A classe Platform é usada para acessar as funcionalidades da plataforma.*
 
-
+--------
 ### 6.2. Código central 
 
 *A porção do código independente de plataforma. É composta pelasclasses pimárias CellBuffer, ContractionState, Document, Editor, Indicator, LineMarker, Style, ViewStyle, KeyMap, ScintillaBase, CallTip e AutoComplete.*
@@ -283,7 +284,7 @@ A adoção do Scintilla trata-se de uma decisão de projeto central, com vantage
 
 *ScintillaBase é uma subclasse de Editor e adiciona funções como listas de autocompletar e menus de contexto. Essas funções usam os objetos CallTip e AutoComplete. Esta classe é opcional, então uma implementação mais leve do Scintilla pode ignorar esta funcionalidade extra se ela não for necessária.*
 
-
+--------
 ### 6.3. Eventos e APIs de plataforma
 
 *Camada responsável por implementar alguns métodos virtuais e conectar-se ao mecanismo de eventos, diferentes para cada plataforma. No Windows, eventos são recebidos através de mensagens e COM. No GTK+, usa-se funções de callback.
