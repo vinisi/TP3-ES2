@@ -124,4 +124,20 @@ Versão 4, Versão 3, Versão 2, Versão 1
    Mais detalhes sobre as releases, em particular as mais antigas, pode ser vista no seguinte link:
 
  [http://docs.notepad-plus-plus.org/index.php/Releases](http://docs.notepad-plus-plus.org/index.php/Releases) 
-		
+ 
+Características de desenvolvimento
+==================================
+
+*Syntax Highlighting e Syntax Folding*
+
+Característica de um editor de texto que apresenta o texto em uma formatação específica, facilitando a escrita em linguagens estruturadas do tipo programação ou marcação pois estruturas e erros de sintaxe são facilmente distinguidos.
+
+No Notepad++ mostramos isso a seguir:
+
+
+![enter image description here](https://lh3.googleusercontent.com/-XwpULCNdq-8/WABAr5beW2I/AAAAAAAADW8/_-Syh_IvN4kznbdHgWbwlmjw5KWdeBrmQCLcB/s0/Screenshot_5.png "Screenshot_5.png")
+
+
+![enter image description here](https://lh3.googleusercontent.com/-_XMmqOMKrYI/WABA4GUXTUI/AAAAAAAADXE/QcgQS0vVaWU6kiTp6EbmChzk_8QD34jdQCLcB/s0/Screenshot_6.png "Screenshot_6.png")
+
+![enter image description here](https://lh3.googleusercontent.com/-68DMn3DMWzg/WABBBTCsY4I/AAAAAAAADXM/6wNmQ_1IMGgWtx7R3M2d2IJ1QPzIwb9KgCLcB/s0/Screenshot_7.png "Screenshot_7.png")
