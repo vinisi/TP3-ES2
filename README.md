@@ -128,15 +128,13 @@ Versão 4, Versão 3, Versão 2, Versão 1
 Características de desenvolvimento
 ==================================
 
-*Syntax Highlighting e Syntax Folding*
+**Syntax Highlighting e Syntax Folding**
 
-Característica de um editor de texto que apresenta o texto em uma formatação específica, facilitando a escrita em linguagens estruturadas do tipo programação ou marcação pois estruturas e erros de sintaxe são facilmente distinguidos.
+*Característica de um editor de texto que apresenta o texto em uma formatação específica, facilitando a escrita em linguagens estruturadas do tipo programação ou marcação pois estruturas e erros de sintaxe são facilmente distinguidos.*
 
 No Notepad++ mostramos isso a seguir:
 
-
 ![enter image description here](https://lh3.googleusercontent.com/-XwpULCNdq-8/WABAr5beW2I/AAAAAAAADW8/_-Syh_IvN4kznbdHgWbwlmjw5KWdeBrmQCLcB/s0/Screenshot_5.png "Screenshot_5.png")
-
 
 ![enter image description here](https://lh3.googleusercontent.com/-_XMmqOMKrYI/WABA4GUXTUI/AAAAAAAADXE/QcgQS0vVaWU6kiTp6EbmChzk_8QD34jdQCLcB/s0/Screenshot_6.png "Screenshot_6.png")
 
