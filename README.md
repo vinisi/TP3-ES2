@@ -19,7 +19,6 @@ Notepad++ é um **editor de texto** de software livre cujo código fonte é aber
 * Gravação de macro
 
 ##Equipe de desenvolvimento
-==========
 * Jens Lorenz
 * Vitaliy Dovgan
 * Harry
@@ -35,5 +34,6 @@ Notepad++ é um **editor de texto** de software livre cujo código fonte é aber
 * Andreas Jonsson
 * Ivan Radić (aka Loreia)
 * Damien Gérard
+
 *Nota: No site principal do Notepad++ temos uma lista de desenvolvedores dentre os quais podemos citar Don Ho como autor e
 É possível também verificar em https://github.com/notepad-plus-plus/notepad-plus-plus/graphs/contributors uma lista de 91 contribuidores para o funcionamento do software.*
