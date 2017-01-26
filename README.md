@@ -221,27 +221,42 @@ A adoção do Scintilla trata-se de uma decisão de projeto central, com vantage
 *Pequena camada de código sobre as capacidades nativas a uma plataforma, definida em Platform.h e implementada uma vez por plataforma, seja ela Windows ou GTK+/Linux. PlatWin.cxx define as variantes Windows dos métodos e PlatGTK.cxx as variantes GTK+.*
 
 **Point, PRectangle**
+
 *Classes simples que contem as primitivas geométricas comumente usadas.*
+
 ==========
 **ColourDesired**
+
 *Classe simples que contem uma cor esperada. Representada internamente como um único inteiro de 32 bits no formato BGR com 8 bits por cor. Provê também uma API conveniente para buscar cada componente separadamente.*
+
 ==========
 **Font**
+
 *Possui um identificador de fonte específico de cada plataforma - HFONT para Windows, PangoFontDescription* para GTK+.*
+
 ==========
 **Surface**
+
 *Surface é uma abstração sobre o conceito de cada plataforma de um lugar onde operações de desenhos gráficos podem ser feitos. Dentre as operações de desenhos fornecidas estão incluídas polígonos preenchidos e não-preenchidos, linhas, retângulos, elipses e texto. Altura e largura de texto e outros detalhes podem ser medidos.*
+
 ==========
 **Window**
+
 *Window permite a execução de operações como exibir, mover, redesenhar e eliminar. Contém um identificador de janela específico para cada plataforma - HWND para Windows, GtkWidget* para GTK+.*
+
 ==========
 **ListBox**
+
 *ListBox é uma subclasse de Window e oferece métodos para operações tais como adição, recuperação e seleção de itens.*
+
 ==========
 **Menu**
+
 *Menu é uma pequena classe para construir menus de popup. Contém o identificador de menu específico de cada plataforma - HMENU para Windows, GtkMenu* para GTK+.*
+
 ==========
 **Platform**
+
 *A classe Platform é usada para acessar as funcionalidades da plataforma.*
 
 
