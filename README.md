@@ -150,10 +150,13 @@ No Notepad++ mostramos isso a seguir:
 
 **Interface minimalista**
 *O usuário pode personalizar a interface da forma como desejar, abaixo temos a lista de exemplos de como a interface pode ficar*
+
 ![enter image description here](https://lh3.googleusercontent.com/-k54ajMNO3SE/WABCGnM8RPI/AAAAAAAADXo/IdsdgjZVpAUdRGFnCivUHdBfxFTt2XjogCLcB/s0/Screenshot_8.png "Screenshot_8.png")
 
 **Guia com botão fechar**
-*É possível fechar as abas abertas clicando no ![enter image description here](http://www.centralliguesite.com.br/application/third_party/xsystem/images/fugue/icons/x.png) 
+*É possível fechar as abas abertas clicando no*
+
+![enter image description here](http://www.centralliguesite.com.br/application/third_party/xsystem/images/fugue/icons/x.png) 
 
 ![enter image description here](https://lh3.googleusercontent.com/-k5H29IIE2DA/WABCPk9q-4I/AAAAAAAADXw/ovBo8zaJKs4tcIJXoyvhmStTN3Av0govwCLcB/s0/Screenshot_9.png "Screenshot_9.png")
 
