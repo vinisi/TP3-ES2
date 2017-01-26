@@ -139,3 +139,7 @@ No Notepad++ mostramos isso a seguir:
 ![enter image description here](https://lh3.googleusercontent.com/-_XMmqOMKrYI/WABA4GUXTUI/AAAAAAAADXE/QcgQS0vVaWU6kiTp6EbmChzk_8QD34jdQCLcB/s0/Screenshot_6.png "Screenshot_6.png")
 
 ![enter image description here](https://lh3.googleusercontent.com/-68DMn3DMWzg/WABBBTCsY4I/AAAAAAAADXM/6wNmQ_1IMGgWtx7R3M2d2IJ1QPzIwb9KgCLcB/s0/Screenshot_7.png "Screenshot_7.png")
+
+**PCRE (Perl Compatible Regular Expression) Search/Replace**
+
+*Biblioteca contendo um conjunto de funções que implementam padrão de correspondência de expressão regular inspirada na interface externa *Perl*. É um destaque de sintaxe poderosa e flexível pois possui sua própria API nativa, bem como um conjunto de funções de mensagens publicitárias que correspondem à expressão regular POSIX API. É uma biblioteca gratuita mesmo que o desenvolvedor a use para a construção de um software pago. Foi inicialmente descrita para o Emim MTA (sistema de transferência de mensagem para uso em sistemas Unix conectados a internet); sendo agora usado agora por diversos códigos de código aberto além do Notepad++ como *Apache , PHP , KDE , Postfix , Analog , e Nmap*. Existem duas versões principais da biblioteca PCRE. A versão mais recente foi lançada em 2015 e está na versão 10.22. A biblioteca PCRE original, lançado originalmente em 1997, está na versão 8.39, e o conjunto de API e funcionalidade são estáveis e futuros lançamentos serão apenas para correções de bugs.*
