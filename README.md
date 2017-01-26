@@ -209,8 +209,8 @@ No Notepad++ mostramos isso a seguir:
 Ele é como o controle RichText padrão que existe no Notepad básico, porém com a adição de funcionalidades relativas a edição de código, como destaque de sintaxe e code folding. As áreas onde escreve e pesquisa texto são exibidas pelo controle Scintilla.
 A adoção do Scintilla trata-se de uma decisão de projeto central, com vantagens e desvantagens, partindo-se do pressuposto que as vantagens prevalecem sobre as desvantagens:*
 
-- Vantagens: Quando o componente Scintilla corrige bugs ou adiciona alguma funcionalidade, é o bastante para Notepad++ adicioná-lo numa versão futura, sem necessidade de trabalho de desenvolvimento por parte da equipe do Notepad++, com o benefício extra do conjunto de testes que o projeto Scintilla possui.
-- Desvantagens: Se Scintilla possui limitações as quais seus desenvolvedores atribuem baixa prioridade, Notepad++ também fica com tais limitações. Soluções alternativas, quando existem, geralmente não são triviais.
+	- **Vantagens**: Quando o componente Scintilla corrige bugs ou adiciona alguma funcionalidade, é o bastante para Notepad++ adicioná-lo numa versão futura, sem necessidade de trabalho de desenvolvimento por parte da equipe do Notepad++, com o benefício extra do conjunto de testes que o projeto Scintilla possui.
+	- **Desvantagens**: Se Scintilla possui limitações as quais seus desenvolvedores atribuem baixa prioridade, Notepad++ também fica com tais limitações. Soluções alternativas, quando existem, geralmente não são triviais.
 
 *Scintilla é estruturado em 3 camadas de código C++, cada uma com seu conjunto de classes e subclasses. O propósito principal desta estrutura é separar o código entre as partes dependentes da plataforma e as partes do código central, que independe de plataforma. Isso facilita a portabilidade do Scintilla para uma nova plataforma e garante que leitores do código não tenham que lidar com detalhes relacionados a plataformas.*
 
