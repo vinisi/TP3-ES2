@@ -42,21 +42,21 @@ Introdução
 ##Evolução do sistema 
 Foram registrados um total de **137 releases** até o momento, porém não é muito claro a partir de qual versão a equipe de desenvolvimento migrou o sistema para o repositório do github ![enter image description here](http://sciactive.com/pnotify/includes/github-icon.png). O tempo de liberação de um novo release é de cerca de um mês, mas não há um dia fixo para isto. O principal responsável pela liberação do release é o usuário Don HO.
 
-==========
+--------
 ### Quantidade de contribuidores
 ![enter image description here](https://lh3.googleusercontent.com/-PxYFiXTf9ew/WAA92WBXC9I/AAAAAAAADV8/CvS15dYEVeQ2kRtoi-Ntqgp4VAW-tGMxgCLcB/s0/Screenshot_1.png "Screenshot_1.png")
 
   > *O gráfico acima mostra a quantidade de contribuidores, desde agosto de 2007 até os dias de hoje,* 
   > *e percebe-se que o sistema obteve um aumento muito grande de contribuição nos últimos anos.*
 
-==========
+--------
 ### Quantidade de commits
  ![enter image description here](https://lh3.googleusercontent.com/-7_YeV0YPENk/WAA-L6CIuzI/AAAAAAAADWE/zS4Y7LPrbFkKLM8mZI82NdIpYGct7_2cwCLcB/s0/Screenshot_2.png "Screenshot_2.png") 
  
    > *O gráfico acima mostra a quantidade de commits feitos durante o último ano. Nota-se que o volume*
    > *de commits se mantém constante o que é bom para manter a software em pleno aprimoramento.*
  
-==========
+--------
 ### Quantidade de código
  ![enter image description here](https://lh3.googleusercontent.com/-5s84BM0lNRA/WAA-bhjgr7I/AAAAAAAADWM/DamV9Uhhy_4-GL8BtWMXBdbhGJzcn82dwCLcB/s0/Screenshot_3.png "Screenshot_3.png")
  
@@ -64,7 +64,7 @@ Foram registrados um total de **137 releases** até o momento, porém não é mu
    > *É possível verificar que existem períodos que incluem muitas linhas e que logo após* 
    > *vêm períodos que removem muitas linhas.*
 
-==========
+--------
 ### Quantidade de commits
 ![enter image description here](https://lh3.googleusercontent.com/-Oh3VPB_ALiA/WAA-sUI06zI/AAAAAAAADWU/pjQv0_ZFlJAMnEvE3nBYDveb91-m3SZTQCLcB/s0/Screenshot_4.png "Screenshot_4.png")
 
@@ -73,9 +73,9 @@ Foram registrados um total de **137 releases** até o momento, porém não é mu
    > *expressa em relação ao horário em que é feito o commit relacionado com o dia da semana.*
 
 --------
-       ***Nota: Muito do sucesso do notepad++ se dá pela fácil utilização e ampla aceitação de vários usuários, 
+       Nota: Muito do sucesso do notepad++ se dá pela fácil utilização e ampla aceitação de vários usuários, 
        bem como a ajuda que o github proporcionou ao projeto, agora este pode ser mantido e evoluído por 
-       pessoas de todo o mundo.***
+       pessoas de todo o mundo.
 
 ==========
 Versão 7
