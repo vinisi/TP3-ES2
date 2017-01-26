@@ -196,3 +196,9 @@ No Notepad++ mostramos isso a seguir:
 
 *WYSIWYG é uma sigla em inglês formada pelas iniciais da expressão *“What You See Is What You Get”* e quer dizer “O que você vê é o que você obtém”. O termo é usado para classificar ferramentas de edição e desenvolvimento que permitem visualizar, em tempo real, exatamente aquilo que será publicado ou impresso.*
 
+ - Suporta ambientes multi-idioma
+ - Bookmark
+ - Gravação e reprodução de macro
+ - Lançamento com diferentes argumentos, vide imagem abaixo:
+ 
+ ![enter image description here](https://lh3.googleusercontent.com/-WioIPKNTRPo/WABDJWdgYrI/AAAAAAAADY0/2tBkUn4Lb7ILNVwwk1PKrM7SZqoBeTlIwCLcB/s0/Screenshot_13.png "Screenshot_13.png")
