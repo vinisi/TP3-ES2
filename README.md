@@ -209,8 +209,8 @@ No Notepad++ mostramos isso a seguir:
 Ele é como o controle RichText padrão que existe no Notepad básico, porém com a adição de funcionalidades relativas a edição de código, como destaque de sintaxe e code folding. As áreas onde escreve e pesquisa texto são exibidas pelo controle Scintilla.
 A adoção do Scintilla trata-se de uma decisão de projeto central, com vantagens e desvantagens, partindo-se do pressuposto que as vantagens prevalecem sobre as desvantagens:*
 
-	- **Vantagens**: Quando o componente Scintilla corrige bugs ou adiciona alguma funcionalidade, é o bastante para Notepad++ adicioná-lo numa versão futura, sem necessidade de trabalho de desenvolvimento por parte da equipe do Notepad++, com o benefício extra do conjunto de testes que o projeto Scintilla possui.
-	- **Desvantagens**: Se Scintilla possui limitações as quais seus desenvolvedores atribuem baixa prioridade, Notepad++ também fica com tais limitações. Soluções alternativas, quando existem, geralmente não são triviais.
+- **Vantagens**: Quando o componente Scintilla corrige bugs ou adiciona alguma funcionalidade, é o bastante para Notepad++ adicioná-lo numa versão futura, sem necessidade de trabalho de desenvolvimento por parte da equipe do Notepad++, com o benefício extra do conjunto de testes que o projeto Scintilla possui.
+- **Desvantagens**: Se Scintilla possui limitações as quais seus desenvolvedores atribuem baixa prioridade, Notepad++ também fica com tais limitações. Soluções alternativas, quando existem, geralmente não são triviais.
 
 *Scintilla é estruturado em 3 camadas de código C++, cada uma com seu conjunto de classes e subclasses. O propósito principal desta estrutura é separar o código entre as partes dependentes da plataforma e as partes do código central, que independe de plataforma. Isso facilita a portabilidade do Scintilla para uma nova plataforma e garante que leitores do código não tenham que lidar com detalhes relacionados a plataformas.*
 
@@ -261,18 +261,49 @@ A adoção do Scintilla trata-se de uma decisão de projeto central, com vantage
 
 
 ### 2. Código central 
-A porção do código independente de plataforma. É composta pelasclasses pimárias CellBuffer, ContractionState, Document, Editor, Indicator, LineMarker, Style, ViewStyle, KeyMap, ScintillaBase, CallTip e AutoComplete.
-CellBuffer
-Um CellBuffer possui informação de texto e estilo, a pilha do “Desfazer”, a atribuição de marcadores de linhas para linhas e a estrutura do fold.
-Document
-Um documento contem um CellBuffer e lida com algumas abstrações de nível mais alto como palavras, sequências de caracteres DBCS e de final de linha. É responsável por gerenciar o processo de estilização e notificar outros objetos quando ocorrem alterações no documento.
-Editor
-O objeto Editor é central para o Scintilla. É responsável por exibir um documento e responder a ações do usuário. Podem existir múltiplos objetos Editor anexados a um objeto Document. Mudanças em um documento são transmitidas para os editores através do mecanismo DocWatcher.
-ScintillaBase
-ScintillaBase é uma subclasse de Editor e adiciona funções como listas de autocompletar e menus de contexto. Essas funções usam os objetos CallTip e AutoComplete. Esta classe é opcional, então uma implementação mais leve do Scintilla pode ignorar esta funcionalidade extra se ela não for necessária.
+
+*A porção do código independente de plataforma. É composta pelasclasses pimárias CellBuffer, ContractionState, Document, Editor, Indicator, LineMarker, Style, ViewStyle, KeyMap, ScintillaBase, CallTip e AutoComplete.*
+
+**CellBuffer**
+
+*Um CellBuffer possui informação de texto e estilo, a pilha do “Desfazer”, a atribuição de marcadores de linhas para linhas e a estrutura do fold.*
+==========
+**Document**
+
+*Um documento contem um CellBuffer e lida com algumas abstrações de nível mais alto como palavras, sequências de caracteres DBCS e de final de linha. É responsável por gerenciar o processo de estilização e notificar outros objetos quando ocorrem alterações no documento.*
+==========
+**Editor**
+
+*O objeto Editor é central para o Scintilla. É responsável por exibir um documento e responder a ações do usuário. Podem existir múltiplos objetos Editor anexados a um objeto Document. Mudanças em um documento são transmitidas para os editores através do mecanismo DocWatcher.*
+==========
+**ScintillaBase**
+
+*ScintillaBase é uma subclasse de Editor e adiciona funções como listas de autocompletar e menus de contexto. Essas funções usam os objetos CallTip e AutoComplete. Esta classe é opcional, então uma implementação mais leve do Scintilla pode ignorar esta funcionalidade extra se ela não for necessária.*
 
 
-Eventos e APIs de plataforma
+### 3. Eventos e APIs de plataforma
 
-Camada responsável por implementar alguns métodos virtuais e conectar-se ao mecanismo de eventos, diferentes para cada plataforma. No Windows, eventos são recebidos através de mensagens e COM. No GTK+, usa-se funções de callback.
-Para cada plataforma, uma classe é derivada de ScintillaBase e, portanto, de Editor, gerando ScintillaWin no Windows e ScintillaGTK no GTK+.
+*Camada responsável por implementar alguns métodos virtuais e conectar-se ao mecanismo de eventos, diferentes para cada plataforma. No Windows, eventos são recebidos através de mensagens e COM. No GTK+, usa-se funções de callback.
+Para cada plataforma, uma classe é derivada de ScintillaBase e, portanto, de Editor, gerando ScintillaWin no Windows e ScintillaGTK no GTK+.*
+
+>Para cada plataforma, uma classe é derivada de ScintillaBase e, portanto, de Editor, gerando ScintillaWin 
+>no Windows e ScintillaGTK no GTK+.
+
+----------
+**Outros componentes**
+
+	Desde a versão 3.1, Notepad++ tem a capacidade de extensão através do seu robusto sistema de plugins, 
+	permitindo integrar várias outras funcionalidades ao programa. Já existem centenas de plugins até o 
+	momento, uma pequena seleção deles incluída na distribuição padrão do Notepad++. Entre os plugins desta 
+	seleção, inclui-se um chamado Plugin Manager, que ajuda a verificar os plugins existentes e instalá-los.
+	
+>A página http://docs.notepad-plus-plus.org/index.php?title=Plugin_Development ensina como instalar e/ou desenvolver um plugin.
+
+	TinyXml é um parser XML escrito em C++ e um componente usado pelo Notepad++ para ler e escrever o arquivo 
+	de configuração XML, o que pode ser usado para prover traduções dos textos do programa para várias linguagens
+	e dialetos locais.	
+	
+## 7. Referências
+- https://notepad-plus-plus.org/
+- http://www.scintilla.org/
+- https://github.com/notepad-plus-plus/notepad-plus-plus
