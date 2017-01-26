@@ -216,72 +216,75 @@ A adoção do Scintilla trata-se de uma decisão de projeto central, com vantage
 
 > Segue abaixo as 3 camadas de código do Scintilla e uma breve visão de suas respectivas classes:
 
-### 1. Biblioteca de portabilidade
+### 6.1. Biblioteca de portabilidade
 
 *Pequena camada de código sobre as capacidades nativas a uma plataforma, definida em Platform.h e implementada uma vez por plataforma, seja ela Windows ou GTK+/Linux. PlatWin.cxx define as variantes Windows dos métodos e PlatGTK.cxx as variantes GTK+.*
 
-**Point, PRectangle**
+**6.1.1 Point, PRectangle**
 
 *Classes simples que contem as primitivas geométricas comumente usadas.*
 
 ==========
-**ColourDesired**
+**6.1.2 ColourDesired**
 
 *Classe simples que contem uma cor esperada. Representada internamente como um único inteiro de 32 bits no formato BGR com 8 bits por cor. Provê também uma API conveniente para buscar cada componente separadamente.*
 
 ==========
-**Font**
+**6.1.3 Font**
 
 *Possui um identificador de fonte específico de cada plataforma - HFONT para Windows, PangoFontDescription* para GTK+.*
 
 ==========
-**Surface**
+** 6.1.4 Surface**
 
 *Surface é uma abstração sobre o conceito de cada plataforma de um lugar onde operações de desenhos gráficos podem ser feitos. Dentre as operações de desenhos fornecidas estão incluídas polígonos preenchidos e não-preenchidos, linhas, retângulos, elipses e texto. Altura e largura de texto e outros detalhes podem ser medidos.*
 
 ==========
-**Window**
+** 6.1.5 Window**
 
 *Window permite a execução de operações como exibir, mover, redesenhar e eliminar. Contém um identificador de janela específico para cada plataforma - HWND para Windows, GtkWidget* para GTK+.*
 
 ==========
-**ListBox**
+**6.1.6 ListBox**
 
 *ListBox é uma subclasse de Window e oferece métodos para operações tais como adição, recuperação e seleção de itens.*
 
 ==========
-**Menu**
+**6.1.7 Menu**
 
 *Menu é uma pequena classe para construir menus de popup. Contém o identificador de menu específico de cada plataforma - HMENU para Windows, GtkMenu* para GTK+.*
 
 ==========
-**Platform**
+**6.1.8 Platform**
 
 *A classe Platform é usada para acessar as funcionalidades da plataforma.*
 
 
-### 2. Código central 
+### 6.2. Código central 
 
 *A porção do código independente de plataforma. É composta pelasclasses pimárias CellBuffer, ContractionState, Document, Editor, Indicator, LineMarker, Style, ViewStyle, KeyMap, ScintillaBase, CallTip e AutoComplete.*
 
-**CellBuffer**
+**6.2.1 CellBuffer**
 
 *Um CellBuffer possui informação de texto e estilo, a pilha do “Desfazer”, a atribuição de marcadores de linhas para linhas e a estrutura do fold.*
+
 ==========
-**Document**
+**6.2.2 Document**
 
 *Um documento contem um CellBuffer e lida com algumas abstrações de nível mais alto como palavras, sequências de caracteres DBCS e de final de linha. É responsável por gerenciar o processo de estilização e notificar outros objetos quando ocorrem alterações no documento.*
+
 ==========
-**Editor**
+**6.2.3 Editor**
 
 *O objeto Editor é central para o Scintilla. É responsável por exibir um documento e responder a ações do usuário. Podem existir múltiplos objetos Editor anexados a um objeto Document. Mudanças em um documento são transmitidas para os editores através do mecanismo DocWatcher.*
+
 ==========
-**ScintillaBase**
+**6.2.4 ScintillaBase**
 
 *ScintillaBase é uma subclasse de Editor e adiciona funções como listas de autocompletar e menus de contexto. Essas funções usam os objetos CallTip e AutoComplete. Esta classe é opcional, então uma implementação mais leve do Scintilla pode ignorar esta funcionalidade extra se ela não for necessária.*
 
 
-### 3. Eventos e APIs de plataforma
+### 6.3. Eventos e APIs de plataforma
 
 *Camada responsável por implementar alguns métodos virtuais e conectar-se ao mecanismo de eventos, diferentes para cada plataforma. No Windows, eventos são recebidos através de mensagens e COM. No GTK+, usa-se funções de callback.
 Para cada plataforma, uma classe é derivada de ScintillaBase e, portanto, de Editor, gerando ScintillaWin no Windows e ScintillaGTK no GTK+.*
