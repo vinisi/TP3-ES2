@@ -141,47 +141,52 @@ No Notepad++ mostramos isso a seguir:
 ![enter image description here](https://lh3.googleusercontent.com/-68DMn3DMWzg/WABBBTCsY4I/AAAAAAAADXM/6wNmQ_1IMGgWtx7R3M2d2IJ1QPzIwb9KgCLcB/s0/Screenshot_7.png "Screenshot_7.png")
 
 ==================================
-
 **PCRE (Perl Compatible Regular Expression) Search/Replace**
 
 *Biblioteca contendo um conjunto de funções que implementam padrão de correspondência de expressão regular inspirada na interface externa *Perl*. É um destaque de sintaxe poderosa e flexível pois possui sua própria API nativa, bem como um conjunto de funções de mensagens publicitárias que correspondem à expressão regular POSIX API. É uma biblioteca gratuita mesmo que o desenvolvedor a use para a construção de um software pago. Foi inicialmente descrita para o Emim MTA (sistema de transferência de mensagem para uso em sistemas Unix conectados a internet); sendo agora usado agora por diversos códigos de código aberto além do Notepad++ como *Apache , PHP , KDE , Postfix , Analog , e Nmap*. Existem duas versões principais da biblioteca PCRE. A versão mais recente foi lançada em 2015 e está na versão 10.22. A biblioteca PCRE original, lançado originalmente em 1997, está na versão 8.39, e o conjunto de API e funcionalidade são estáveis e futuros lançamentos serão apenas para correções de bugs.*
 
 ==================================
-
 **Interface minimalista**
 *O usuário pode personalizar a interface da forma como desejar, abaixo temos a lista de exemplos de como a interface pode ficar*
 
 ![enter image description here](https://lh3.googleusercontent.com/-k54ajMNO3SE/WABCGnM8RPI/AAAAAAAADXo/IdsdgjZVpAUdRGFnCivUHdBfxFTt2XjogCLcB/s0/Screenshot_8.png "Screenshot_8.png")
 
+==========
 **Guia com botão fechar**
 *É possível fechar as abas abertas clicando no* ![enter image description here](http://www.centralliguesite.com.br/application/third_party/xsystem/images/fugue/icons/x.png) 
 
 ![enter image description here](https://lh3.googleusercontent.com/-k5H29IIE2DA/WABCPk9q-4I/AAAAAAAADXw/ovBo8zaJKs4tcIJXoyvhmStTN3Av0govwCLcB/s0/Screenshot_9.png "Screenshot_9.png")
 
+==========
 **Guia Multi linha**
 
 ![enter image description here](https://lh3.googleusercontent.com/-9cNbDHhqV-k/WABCWTFPjbI/AAAAAAAADYA/sh8lm2MRJPkBttLUqqHKFbumoW5BTjiWwCLcB/s0/Screenshot_10.png "Screenshot_10.png")
 
+==========
 **Abas nas verticais**
 
 ![enter image description here](https://lh3.googleusercontent.com/-ngHLrBQDWXM/WABCdMpvn2I/AAAAAAAADYI/uqjvZGkMj6M_GBgIeFqFcgnN47d48ievgCLcB/s0/Screenshot_10.png "Screenshot_10.png")
 
+==========
 **Lista de documentos verticais alinhados a esquerda**
 
 ![enter image description here](https://lh3.googleusercontent.com/-w49M5C0NNwg/WABCnbxoE5I/AAAAAAAADYQ/NaSWbaAhWxIBRXfEqGYE0CD75YJNmhXOQCLcB/s0/Screenshot_11.png "Screenshot_11.png")
 
+==========
 **Mapa do documento**
 Informa para o usuário onde está no código, a imagem pode ser visualizada abaixo
 
 ![enter image description here](https://lh3.googleusercontent.com/-HZDa_9AhNYs/WABCzfsPvoI/AAAAAAAADYc/1LrjqaPJNeEi4HC9u8yOnHN7eIkPqdRiACLcB/s0/Screenshot_12.png "Screenshot_12.png")
 
-
+==========
 **AutoComplete**
 Provê sugestões enquanto o usuário está digitando, auxiliando e provendo agilidade ao desenvolvimento.
 
+==========
 **Interface de documentos múltiplos e Multi-View**
 Permite que o usuário exiba vários documentos ao mesmo tempo, porém com cada documento sendo exibido em sua própria janela. Notepad++  pode indicar dois arquivos um do lado do outro ou acima ou até mesmo mostrar duas partes do mesmo arquivo.
 
+==========
 **WYSIWYG**
 WYSIWYG é uma sigla em inglês formada pelas iniciais da expressão *“What You See Is What You Get”* e quer dizer “O que você vê é o que você obtém”. O termo é usado para classificar ferramentas de edição e desenvolvimento que permitem visualizar, em tempo real, exatamente aquilo que será publicado ou impresso.
 
